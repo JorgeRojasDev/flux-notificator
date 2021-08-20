@@ -1,1 +1,1 @@
-# flux-notificator
+# Spring-Boot Flux-Notificator
