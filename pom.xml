@@ -4,11 +4,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.github.jorgerojasdev</groupId>
-    <artifactId>flux-notificator</artifactId>
+    <artifactId>spring-boot-flux-notifier</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>spring-boot-flux-notificator</name>
+    <name>spring-boot-flux-notifier</name>
     <description>Notificator Webflux Library</description>
-    <url>https://github.com/JorgeRojasDev/spring-boot-flux-notificator</url>
+    <url>https://github.com/JorgeRojasDev/spring-boot-flux-notifier</url>
 
     <properties>
         <java.version>11</java.version>
