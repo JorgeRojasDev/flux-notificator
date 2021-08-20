@@ -1,12 +1,12 @@
-package com.jorgerojasdev.libraries.fluxnotificator.service.abstraction;
+package com.jorgerojasdev.libraries.fluxnotifier.service.abstraction;
 
-import com.jorgerojasdev.libraries.fluxnotificator.model.exception.ChannelNotFoundException;
-import com.jorgerojasdev.libraries.fluxnotificator.model.exception.ConsumerNotFoundException;
+import com.jorgerojasdev.libraries.fluxnotifier.model.exception.ChannelNotFoundException;
+import com.jorgerojasdev.libraries.fluxnotifier.model.exception.ConsumerNotFoundException;
 import reactor.core.publisher.Flux;
 
 import java.util.function.Predicate;
 
-public interface Notificator<T> {
+public interface Notifier<T> {
 
     Flux<T> addConsumer(String channel, Object consumerId);
 

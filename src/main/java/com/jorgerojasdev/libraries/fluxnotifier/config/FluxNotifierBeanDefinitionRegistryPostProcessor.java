@@ -1,7 +1,7 @@
-package com.jorgerojasdev.libraries.fluxnotificator.config;
+package com.jorgerojasdev.libraries.fluxnotifier.config;
 
-import com.jorgerojasdev.libraries.fluxnotificator.model.annotation.EnableFluxNotifiers;
-import com.jorgerojasdev.libraries.fluxnotificator.processor.FluxNotifierProcessor;
+import com.jorgerojasdev.libraries.fluxnotifier.model.annotation.EnableFluxNotifiers;
+import com.jorgerojasdev.libraries.fluxnotifier.processor.FluxNotifierProcessor;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.NoSuchBeanDefinitionException;
 import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;

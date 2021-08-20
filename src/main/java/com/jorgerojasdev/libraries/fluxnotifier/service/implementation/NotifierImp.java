@@ -1,8 +1,8 @@
-package com.jorgerojasdev.libraries.fluxnotificator.service.implementation;
+package com.jorgerojasdev.libraries.fluxnotifier.service.implementation;
 
-import com.jorgerojasdev.libraries.fluxnotificator.model.exception.ChannelNotFoundException;
-import com.jorgerojasdev.libraries.fluxnotificator.model.exception.ConsumerNotFoundException;
-import com.jorgerojasdev.libraries.fluxnotificator.service.abstraction.Notificator;
+import com.jorgerojasdev.libraries.fluxnotifier.model.exception.ChannelNotFoundException;
+import com.jorgerojasdev.libraries.fluxnotifier.model.exception.ConsumerNotFoundException;
+import com.jorgerojasdev.libraries.fluxnotifier.service.abstraction.Notifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import reactor.core.publisher.Flux;
@@ -12,13 +12,13 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.function.Predicate;
 
-public class NotificatorImp<T> implements Notificator<T> {
+public class NotifierImp<T> implements Notifier<T> {
 
     private Map<String, Map<Object, Sinks.Many<T>>> consumers = new HashMap<>();
     private Map<String, Sinks.Many<T>> channels = new HashMap<>();
     private Logger log;
 
-    public NotificatorImp(Class<T> clazz) {
+    public NotifierImp(Class<T> clazz) {
         this.log = LoggerFactory.getLogger(clazz);
     }
 

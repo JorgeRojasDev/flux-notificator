@@ -1,8 +1,8 @@
-package com.jorgerojasdev.libraries.fluxnotificator.processor;
+package com.jorgerojasdev.libraries.fluxnotifier.processor;
 
-import com.jorgerojasdev.libraries.fluxnotificator.handler.NotificatorInvocationHandler;
-import com.jorgerojasdev.libraries.fluxnotificator.service.abstraction.Notificator;
-import com.jorgerojasdev.libraries.fluxnotificator.service.implementation.NotificatorImp;
+import com.jorgerojasdev.libraries.fluxnotifier.handler.NotifierInvocationHandler;
+import com.jorgerojasdev.libraries.fluxnotifier.service.abstraction.Notifier;
+import com.jorgerojasdev.libraries.fluxnotifier.service.implementation.NotifierImp;
 import org.reflections.Reflections;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,7 +20,7 @@ public class FluxNotifierProcessor {
 
     public static void process(BeanDefinitionRegistry beanDefinitionRegistry, String basePackage) {
         Reflections ref = new Reflections(basePackage);
-        Set<Class<? extends Notificator>> classes = ref.getSubTypesOf(Notificator.class);
+        Set<Class<? extends Notifier>> classes = ref.getSubTypesOf(Notifier.class);
 
         classes.forEach((clazz) -> {
             if (clazz.isInterface()) {
@@ -32,8 +32,8 @@ public class FluxNotifierProcessor {
                         try {
                             Object proxyFluxNotifier = Proxy.newProxyInstance(clazz.getClassLoader(),
                                     new Class[]{clazz},
-                                    new NotificatorInvocationHandler<>(
-                                            new NotificatorImp<>(Class.forName(classArguments[0].getTypeName())
+                                    new NotifierInvocationHandler<>(
+                                            new NotifierImp<>(Class.forName(classArguments[0].getTypeName())
                                             )));
                             BeanDefinitionBuilder beanDefinitionBuilder = BeanDefinitionBuilder.genericBeanDefinition(proxyFluxNotifier.getClass());
                             beanDefinitionBuilder.addConstructorArgValue(Proxy.getInvocationHandler(proxyFluxNotifier));

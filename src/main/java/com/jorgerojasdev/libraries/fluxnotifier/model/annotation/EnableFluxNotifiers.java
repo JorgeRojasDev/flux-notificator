@@ -1,4 +1,4 @@
-package com.jorgerojasdev.libraries.fluxnotificator.model.annotation;
+package com.jorgerojasdev.libraries.fluxnotifier.model.annotation;
 
 import java.lang.annotation.*;
 
