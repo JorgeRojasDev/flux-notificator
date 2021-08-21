@@ -8,7 +8,7 @@
 
 Sometimes, setting up a notification system can be complicated, and for it we can use different options (eg: Websockets, Polling), any of the mentioned examples have different implementations and conceptual problems, such as security in websockets or the overload of traffic in a polling system.
 
-Here's why:
+### We offer
 * Use Webflux to make your systems efficient and robust :muscle:
 * Refrain from your notifiers implementations :massage:
 * Keep the architecture you want for your project and leave the rest to Flux-Notifier :blush:
