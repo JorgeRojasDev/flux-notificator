@@ -54,7 +54,7 @@ Here's why:
     </p>
     <br>
 
-- **3** - **Creating Configuration**<br>
+- **3** - **Creating Configuration**<br><br>
     We must create a configuration that has the annotation EnableFluxNotifiers, this receives as a basePackages parameter the root on which FluxNotifier will search its implementations, Ex:
     ~~~
     @Configuration
@@ -64,7 +64,7 @@ Here's why:
     }
     ~~~
     <br>
-- **4** - **Starting to Notify**<br>
+- **4** - **Starting to Notify**<br><br>
     And that's all, now you can start subscribing to the notifier and start issuing notifications :smile:
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
