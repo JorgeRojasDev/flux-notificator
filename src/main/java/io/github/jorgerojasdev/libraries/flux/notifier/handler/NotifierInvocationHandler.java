@@ -1,6 +1,6 @@
-package com.jorgerojasdev.libraries.fluxnotifier.handler;
+package io.github.jorgerojasdev.libraries.flux.notifier.handler;
 
-import com.jorgerojasdev.libraries.fluxnotifier.service.implementation.NotifierImp;
+import io.github.jorgerojasdev.libraries.flux.notifier.service.implementation.NotifierImp;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

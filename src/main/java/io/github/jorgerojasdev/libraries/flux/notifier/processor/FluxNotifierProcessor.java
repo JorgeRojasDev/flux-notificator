@@ -1,8 +1,8 @@
-package com.jorgerojasdev.libraries.fluxnotifier.processor;
+package io.github.jorgerojasdev.libraries.flux.notifier.processor;
 
-import com.jorgerojasdev.libraries.fluxnotifier.handler.NotifierInvocationHandler;
-import com.jorgerojasdev.libraries.fluxnotifier.service.abstraction.Notifier;
-import com.jorgerojasdev.libraries.fluxnotifier.service.implementation.NotifierImp;
+import io.github.jorgerojasdev.libraries.flux.notifier.handler.NotifierInvocationHandler;
+import io.github.jorgerojasdev.libraries.flux.notifier.service.abstraction.Notifier;
+import io.github.jorgerojasdev.libraries.flux.notifier.service.implementation.NotifierImp;
 import org.reflections.Reflections;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

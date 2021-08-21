@@ -1,2 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-com.jorgerojasdev.libraries.fluxnotifier.config.FluxNotifierBeanDefinitionRegistryPostProcessor
+io.github.jorgerojasdev.libraries.flux.notifier.FluxNotifierBeanDefinitionRegistryPostProcessor

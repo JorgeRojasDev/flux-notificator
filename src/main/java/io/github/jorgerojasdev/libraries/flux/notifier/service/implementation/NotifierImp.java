@@ -1,8 +1,8 @@
-package com.jorgerojasdev.libraries.fluxnotifier.service.implementation;
+package io.github.jorgerojasdev.libraries.flux.notifier.service.implementation;
 
-import com.jorgerojasdev.libraries.fluxnotifier.model.exception.ChannelNotFoundException;
-import com.jorgerojasdev.libraries.fluxnotifier.model.exception.ConsumerNotFoundException;
-import com.jorgerojasdev.libraries.fluxnotifier.service.abstraction.Notifier;
+import io.github.jorgerojasdev.libraries.flux.notifier.model.exception.ChannelNotFoundException;
+import io.github.jorgerojasdev.libraries.flux.notifier.model.exception.ConsumerNotFoundException;
+import io.github.jorgerojasdev.libraries.flux.notifier.service.abstraction.Notifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import reactor.core.publisher.Flux;

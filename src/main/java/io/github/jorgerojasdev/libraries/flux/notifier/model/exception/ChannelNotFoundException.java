@@ -1,4 +1,4 @@
-package com.jorgerojasdev.libraries.fluxnotifier.model.exception;
+package io.github.jorgerojasdev.libraries.flux.notifier.model.exception;
 
 public class ChannelNotFoundException extends Exception {
     public ChannelNotFoundException(String message) {

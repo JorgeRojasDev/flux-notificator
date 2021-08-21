@@ -1,7 +1,7 @@
-package com.jorgerojasdev.libraries.fluxnotifier.service.abstraction;
+package io.github.jorgerojasdev.libraries.flux.notifier.service.abstraction;
 
-import com.jorgerojasdev.libraries.fluxnotifier.model.exception.ChannelNotFoundException;
-import com.jorgerojasdev.libraries.fluxnotifier.model.exception.ConsumerNotFoundException;
+import io.github.jorgerojasdev.libraries.flux.notifier.model.exception.ChannelNotFoundException;
+import io.github.jorgerojasdev.libraries.flux.notifier.model.exception.ConsumerNotFoundException;
 import reactor.core.publisher.Flux;
 
 import java.util.function.Predicate;

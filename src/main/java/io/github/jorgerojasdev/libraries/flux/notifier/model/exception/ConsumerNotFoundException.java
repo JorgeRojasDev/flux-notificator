@@ -1,4 +1,4 @@
-package com.jorgerojasdev.libraries.fluxnotifier.model.exception;
+package io.github.jorgerojasdev.libraries.flux.notifier.model.exception;
 
 public class ConsumerNotFoundException extends Exception {
 
