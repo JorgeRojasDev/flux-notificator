@@ -27,7 +27,7 @@ Sometimes, setting up a notification system can be complicated, and for it we ca
     <dependency>
         <groupId>io.github.jorgerojasdev</groupId>
         <artifactId>spring-boot-flux-notifier</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>0.2.1</version>
     </dependency>
     ~~~
   - **Gradle**:
