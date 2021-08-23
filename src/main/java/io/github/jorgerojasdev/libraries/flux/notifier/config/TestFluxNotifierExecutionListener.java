@@ -26,7 +26,7 @@ public class TestFluxNotifierExecutionListener implements TestExecutionListener,
         return Integer.MIN_VALUE;
     }
 
-    protected void injectDependencies(TestContext testContext) throws Exception {
+    protected void injectDependencies(TestContext testContext) throws ClassNotFoundException {
         Object bean = testContext.getTestInstance();
         Class<?> clazz = testContext.getTestClass();
         DefaultListableBeanFactory beanFactory = (DefaultListableBeanFactory) testContext.getApplicationContext().getAutowireCapableBeanFactory();
@@ -34,9 +34,9 @@ public class TestFluxNotifierExecutionListener implements TestExecutionListener,
         for (Field declaredField : clazz.getDeclaredFields()) {
             Type[] interfaces = declaredField.getType().getGenericInterfaces();
             for (Type ifc : interfaces) {
-                Class fieldClass = Class.forName(declaredField.getType().getTypeName());
+                Class<?> fieldClass = Class.forName(declaredField.getType().getTypeName());
                 ParameterizedType ifcType = ((ParameterizedType) ifc);
-                Class ifcClass = Class.forName(ifcType.getRawType().getTypeName());
+                Class<?> ifcClass = Class.forName(ifcType.getRawType().getTypeName());
                 if (ifcClass.equals(Notifier.class) && ifcClass.isInterface()) {
                     Type[] arguments = ifcType.getActualTypeArguments();
                     assert arguments.length > 0 : "Argument of Notifier must be declared";

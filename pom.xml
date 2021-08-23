@@ -7,7 +7,7 @@
     <artifactId>spring-boot-flux-notifier</artifactId>
     <version>0.2.2</version>
     <name>spring-boot-flux-notifier</name>
-    <description>Notificator Webflux Library</description>
+    <description>Notifier Webflux Library</description>
     <url>https://github.com/JorgeRojasDev/spring-boot-flux-notifier</url>
 
     <properties>
@@ -99,7 +99,6 @@
             <artifactId>spring-test</artifactId>
             <version>5.3.9</version>
         </dependency>
-
     </dependencies>
 
     <scm>
