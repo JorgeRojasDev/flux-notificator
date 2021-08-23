@@ -18,11 +18,14 @@ public class FluxNotifierProcessor {
 
     private static Logger logger = LoggerFactory.getLogger(FluxNotifierProcessor.class);
 
+    private FluxNotifierProcessor() {
+    }
+
     public static void process(BeanDefinitionRegistry beanDefinitionRegistry, String basePackage) {
         Reflections ref = new Reflections(basePackage);
         Set<Class<? extends Notifier>> classes = ref.getSubTypesOf(Notifier.class);
 
-        classes.forEach((clazz) -> {
+        classes.forEach(clazz -> {
             if (clazz.isInterface()) {
                 Type[] types = clazz.getGenericInterfaces();
                 if (types.length == 1) {
