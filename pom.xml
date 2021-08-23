@@ -5,7 +5,7 @@
 
     <groupId>io.github.jorgerojasdev</groupId>
     <artifactId>spring-boot-flux-notifier</artifactId>
-    <version>0.2.2</version>
+    <version>0.2.3-SNAPSHOT</version>
     <name>spring-boot-flux-notifier</name>
     <description>Notifier Webflux Library</description>
     <url>https://github.com/JorgeRojasDev/spring-boot-flux-notifier</url>
